@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+//bottom nav bar
+#foot{
+    background:lightgray;
+    
+  }
+  .fa-facebook {
+   
+    color:white;
+    border-radius: 30px;
+    width: 29px;
+  }
+  
+  .fa-instagram {
+   
+    color:white;
+    border-radius: 30px;
+    width: 29px;
+  }
+  .fa-twitter {
+   
+    color:white;
+    border-radius: 30px;
+    width: 29px;
+  }
+
+ //variable for color of top nav bar
+$navcolor: rgb(44, 51, 54);
+//color of tdo
+$greentdo:rgb(0, 156, 158);
+
+//makes secreen now have white gaps
+html, body {
+    max-width: 100%;
+    
+    overflow-x: hidden;
+    
+    
+    
+}
+
+//header next to logo in nave bar
+.TDO{
+    color: rgb(0, 156, 158);
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+// links in top nav bar
+.topnav-right {
+    float: right;
+
+    a{padding: 0.5rem;margin-right: 2rem ;
+        &:hover{ background: lighten($navcolor,6)}
+    };
+    color: whitesmoke;
+  }
+html, body { height: 100%; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-full-width {
+    width: 75%;
+    margin-left: 2.5rem;
+  }
+
+  .dot {
+      margin-right: 3rem;
+    height: 37px;
+    width: 37px;
+    background-color:$greentdo;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  #adminnav{
+a{margin-left: 10rem;}
+
+  }
