@@ -21,7 +21,8 @@ import { ResetpasswordpageComponent } from './login/resetpasswordpage/resetpassw
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { UserRoleComponent } from './login/user-role/user-role.component';
 import { AdduserroleComponent } from './login/user-role/adduserrole/adduserrole.component';
-
+import {MatMenuModule} from '@angular/material/menu';
+ 
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { AdduserroleComponent } from './login/user-role/adduserrole/adduserrole.
     MatListModule,
     ChartsModule,
     MatDialogModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule
     
   ],
   providers: [],
