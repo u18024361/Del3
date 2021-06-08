@@ -10,8 +10,7 @@ import{ForgotpasswordComponent} from './forgotpassword/forgotpassword.component'
 })
 export class LoginComponent implements OnInit {
 
-  animal: string;
-  name: string;
+  
 
   constructor(route:Router,public dialog: MatDialog) { }
 

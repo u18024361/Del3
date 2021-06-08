@@ -35,6 +35,9 @@ $greentdo:rgb(0, 156, 158);
 html, body {
     max-width: 100%;
     
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
     
     
@@ -79,4 +82,20 @@ body { font-family: Roboto, "Helvetica Neue", sans-serif; }
   #adminnav{
 a{margin-left: 10rem;}
 
+  }
+
+  //green headers
+  .header{
+    
+    background-color: $greentdo;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    border-radius: 40%;
+    height: 40px;
+    width: 350px;
+   border-radius: 40px;
+   font-size: x-large;
+   
+    
   }

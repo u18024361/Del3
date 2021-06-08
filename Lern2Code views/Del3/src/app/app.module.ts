@@ -19,6 +19,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { ForgotpasswordComponent } from './login/forgotpassword/forgotpassword.component';
 import { ResetpasswordpageComponent } from './login/resetpasswordpage/resetpasswordpage.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { UserRoleComponent } from './login/user-role/user-role.component';
+import { AdduserroleComponent } from './login/user-role/adduserrole/adduserrole.component';
 
 
 
@@ -30,6 +32,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     SideNavComponent,
     ForgotpasswordComponent,
     ResetpasswordpageComponent,
+    UserRoleComponent,
+   
+    AdduserroleComponent,
     
   ],
   imports: [
