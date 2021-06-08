@@ -1,5 +1,6 @@
 import { Component, OnInit,ElementRef, ViewChild } from '@angular/core';
 import { ChartType,ChartOptions } from 'chart.js';
+import Swal from 'sweetalert2'
 import { Label,
   monkeyPatchChartJsLegend,
   monkeyPatchChartJsTooltip,
@@ -79,6 +80,20 @@ export class AdminComponent implements OnInit {
     monkeyPatchChartJsLegend(); }
 
   ngOnInit(): void {
+  }
+  logout(){
+    Swal.fire({
+    
+      icon: 'warning',
+      title: 'Are you sure you want to logout',
+      confirmButtonText: 'Confirm',
+     
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      cancelButtonText: 'Cancel'
+      
+    })
   }
 
 }
