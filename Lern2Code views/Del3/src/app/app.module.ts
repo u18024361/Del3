@@ -15,6 +15,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ChartsModule } from 'ng2-charts';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ForgotpasswordComponent } from './login/forgotpassword/forgotpassword.component';
+import { ResetpasswordpageComponent } from './login/resetpasswordpage/resetpasswordpage.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -24,6 +28,8 @@ import { ChartsModule } from 'ng2-charts';
     LoginComponent,
     AdminComponent,
     SideNavComponent,
+    ForgotpasswordComponent,
+    ResetpasswordpageComponent,
     
   ],
   imports: [
@@ -37,7 +43,9 @@ import { ChartsModule } from 'ng2-charts';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    ChartsModule
+    ChartsModule,
+    MatDialogModule,
+    MatFormFieldModule
     
   ],
   providers: [],
