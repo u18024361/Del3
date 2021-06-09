@@ -10,6 +10,10 @@ import { UnihomeComponent } from './admin/university/unihome/unihome.component';
 import { AdduniComponent } from './admin/university/adduni/adduni.component';
 import { ModhomeComponent } from './admin/university/modhome/modhome.component';
 import { AddmodComponent } from './admin/module/addmod/addmod.component';
+import { SearchStudentComponent } from './admin/search-student/search-student.component';
+import{SessionContentComponent} from './admin/session-content/session-content.component';
+import{TestComponent} from './test/test.component'
+import { from } from 'rxjs';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -23,6 +27,10 @@ const routes: Routes = [
   {path:'adduniversity', component:AdduniComponent},
   {path:'module',component:ModhomeComponent},
   {path:'addmodule',component:AddmodComponent}
+  {path:'adduniversity', component:AdduniComponent},
+  {path:'searchstudent', component:SearchStudentComponent},
+  {path:'SessionContent', component:SessionContentComponent},
+  {path:'test', component:TestComponent},
 
 
 ];
