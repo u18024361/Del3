@@ -1,0 +1,108 @@
+<nav class="navbar navbar-dark bg-dark" >
+    <a class="navbar-brand" href="#">
+      <img
+        src="../.././assets/pics/HD logo.png"
+        width="40"
+        height="40"
+        class="d-inline-block align-top"
+        alt=""
+      />
+    </a>
+    <span class="TDO" style="color: rgb(0, 156, 158); margin-right: auto"
+      >TutorDevOps</span
+    >
+    <div class="topnav-right">
+      <a>Home</a>
+     
+    </div>
+    <div class="topnav-right">
+       
+        <div class="dot" >A</div>
+    </div>
+  </nav>
+
+  <div style="padding-top: 2rem;padding-bottom: 2rem;">
+    <div class="header" >List of students</div>
+  </div>
+
+
+  <div style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+0 6px 6px rgba(0, 0, 0, 0.23);width: 80%;margin: auto;border-radius: 15px;" >
+<br>
+<div class="input-group rounded" style="width: 30%;padding-left: 6rem;">
+    <input  type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+      aria-describedby="search-addon" />
+    <span >
+     <button (click)="search()"  class="btn btn-primary"> <i class="fa fa-search"></i></button>
+    </span>
+  </div>
+  <br>
+    <table class="table table-hover" style="width: 90%;margin: auto; padding-top: 2rem;">
+        <thead >
+          <tr>
+            <th scope="col">Student name</th>
+            <th scope="col">Student surname</th>
+            <th scope="col">Student email</th>
+            <th scope="col">Student Phone</th>
+            <th scope="col">Uiversity</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Roberto</td>
+            <td>Adinolfi</td>
+            <td>u18024361@tuks.co.za</td>
+            <td>0716547856</td>
+            <td>University Of Pretoria</td>
+            <td><button  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>Teel</td>
+            <td>Teel@gmail.com</td>
+            <td>0826725656</td>
+            <td>University Of Pretoria</td>
+            <td><button  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>Hannah</td>
+            <td>Baker</td>
+            <td>Bake@icloud.com</td>
+            <td>0712834675</td>
+            <td>University Of Pretoria</td>
+            <td><button  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+          </tr>
+          <tr>
+            <td>Jake</td>
+            <td>Paul</td>
+            <td>Paule@icloud.com</td>
+            <td>0712834375</td>
+            <td>University Of Pretoria</td>
+            <td><button (click)="delete()"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+<br>
+<br>
+
+</div>
+
+
+<footer style="bottom: 0;position:absolute;width:100%;">
+  <nav  id="foot" class="navbar ">
+    <a class="navbar-brand" href="#">
+     
+    </a>
+    <span class="TDO" style=" margin-right: auto"
+      > &lt; TDO &gt;</span
+    >
+    <div class="topnav-right">
+      
+      <a href="#"> <i class="fa fa-facebook"></i> </a>
+      <a href="#"> <i class="fa fa-instagram"></i> </a>
+      <a href="#"> <i class="fa fa-twitter"></i> </a>
+      <a>TutorDevOps@gmail.com</a>
+    </div>
+  </nav>
+</footer>
