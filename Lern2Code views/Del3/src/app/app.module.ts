@@ -22,6 +22,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { UserRoleComponent } from './login/user-role/user-role.component';
 import { AdduserroleComponent } from './login/user-role/adduserrole/adduserrole.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { TutapplicationComponent } from './admin/tutapplication/tutapplication.component';
+import { TutorsComponent } from './admin/tutors/tutors.component';
+import { UnihomeComponent } from './admin/university/unihome/unihome.component';
+import { AdduniComponent } from './admin/university/adduni/adduni.component';
  
 
 
@@ -36,6 +40,10 @@ import {MatMenuModule} from '@angular/material/menu';
     UserRoleComponent,
    
     AdduserroleComponent,
+        TutapplicationComponent,
+        TutorsComponent,
+        UnihomeComponent,
+        AdduniComponent,
     
   ],
   imports: [
