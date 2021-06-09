@@ -8,6 +8,8 @@ import {TutapplicationComponent} from './admin/tutapplication/tutapplication.com
 import { TutorsComponent } from './admin/tutors/tutors.component';
 import { UnihomeComponent } from './admin/university/unihome/unihome.component';
 import { AdduniComponent } from './admin/university/adduni/adduni.component';
+import { SearchStudentComponent } from './admin/search-student/search-student.component';
+import{SessionContentComponent} from './admin/session-content/session-content.component'
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:'tutapplication', component: TutapplicationComponent},
   {path:'tutors', component:TutorsComponent},
   {path:'university', component:UnihomeComponent},
-  {path:'adduniversity', component:AdduniComponent}
+  {path:'adduniversity', component:AdduniComponent},
+  {path:'searchstudent', component:SearchStudentComponent},
+  {path:'SessionContent', component:SessionContentComponent},
 
 
 ];
