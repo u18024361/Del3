@@ -8,6 +8,8 @@ import {TutapplicationComponent} from './admin/tutapplication/tutapplication.com
 import { TutorsComponent } from './admin/tutors/tutors.component';
 import { UnihomeComponent } from './admin/university/unihome/unihome.component';
 import { AdduniComponent } from './admin/university/adduni/adduni.component';
+import { ModhomeComponent } from './admin/university/modhome/modhome.component';
+import { AddmodComponent } from './admin/module/addmod/addmod.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:'tutapplication', component: TutapplicationComponent},
   {path:'tutors', component:TutorsComponent},
   {path:'university', component:UnihomeComponent},
-  {path:'adduniversity', component:AdduniComponent}
+  {path:'adduniversity', component:AdduniComponent},
+  {path:'module',component:ModhomeComponent},
+  {path:'addmodule',component:AddmodComponent}
 
 
 ];
