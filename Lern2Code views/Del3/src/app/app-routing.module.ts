@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'university', component:UnihomeComponent},
   {path:'adduniversity', component:AdduniComponent},
   {path:'module',component:ModhomeComponent},
-  {path:'addmodule',component:AddmodComponent}
+  {path:'addmodule',component:AddmodComponent},
   {path:'adduniversity', component:AdduniComponent},
   {path:'searchstudent', component:SearchStudentComponent},
   {path:'SessionContent', component:SessionContentComponent},
