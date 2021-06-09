@@ -16,11 +16,21 @@
         <a style="color: whitesmoke; margin-right: 3rem;">Home</a>
         
       </div>
-    <div class="topnav-right">
+    <div class="topnav-right" >
+      
        
-        <div class="dot" >A</div>
+        <div [matMenuTriggerFor]="menu"  class="dot" >A</div>
     </div>
   </nav>
+
+  <!--menu-->
+  
+  <mat-menu #menu="matMenu" xPosition="before">
+    <button mat-menu-item><i class="fa fa-user" aria-hidden="true" style="padding-right: 0.5rem;"></i>Profile</button>
+    <button (click)="logout()" mat-menu-item><i class="fa fa-sign-out" aria-hidden="true" style="padding-right: 0.5rem;"></i>Logout</button>
+  </mat-menu>
+
+  <span flex></span>
 
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav  style="width: 10rem;background-color: rgb(54, 72, 80);" #drawer class="sidenav" fixedInViewport
