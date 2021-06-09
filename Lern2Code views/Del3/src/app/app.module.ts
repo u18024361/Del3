@@ -26,6 +26,8 @@ import { TutapplicationComponent } from './admin/tutapplication/tutapplication.c
 import { TutorsComponent } from './admin/tutors/tutors.component';
 import { UnihomeComponent } from './admin/university/unihome/unihome.component';
 import { AdduniComponent } from './admin/university/adduni/adduni.component';
+import { ModhomeComponent } from './admin/university/modhome/modhome.component';
+import { AddmodComponent } from './admin/module/addmod/addmod.component';
 import { SearchStudentComponent } from './admin/search-student/search-student.component';
 import { SessionContentComponent } from './admin/session-content/session-content.component';
 import { AddCategoryComponent } from './admin/session-content/add-category/add-category.component';
@@ -52,6 +54,8 @@ import { TestComponent } from './test/test.component';
         SessionContentComponent,
         AddCategoryComponent,
         TestComponent,
+        ModhomeComponent,
+        AddmodComponent,
     
   ],
   imports: [
