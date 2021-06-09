@@ -29,6 +29,7 @@ import { AdduniComponent } from './admin/university/adduni/adduni.component';
 import { SearchStudentComponent } from './admin/search-student/search-student.component';
 import { SessionContentComponent } from './admin/session-content/session-content.component';
 import { AddCategoryComponent } from './admin/session-content/add-category/add-category.component';
+import { TestComponent } from './test/test.component';
  
 
 
@@ -50,6 +51,7 @@ import { AddCategoryComponent } from './admin/session-content/add-category/add-c
         SearchStudentComponent,
         SessionContentComponent,
         AddCategoryComponent,
+        TestComponent,
     
   ],
   imports: [
