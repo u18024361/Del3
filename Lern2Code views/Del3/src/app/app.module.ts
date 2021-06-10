@@ -32,6 +32,8 @@ import { SearchStudentComponent } from './admin/search-student/search-student.co
 import { SessionContentComponent } from './admin/session-content/session-content.component';
 import { AddCategoryComponent } from './admin/session-content/add-category/add-category.component';
 import { TestComponent } from './test/test.component';
+import { CoursesComponent } from './admin/courses/courses.component';
+import { AddcategoryComponent } from './admin/courses/addcategory/addcategory.component';
  
 
 
@@ -56,6 +58,8 @@ import { TestComponent } from './test/test.component';
         TestComponent,
         ModhomeComponent,
         AddmodComponent,
+        CoursesComponent,
+        AddcategoryComponent,
     
   ],
   imports: [

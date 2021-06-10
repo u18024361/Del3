@@ -14,6 +14,7 @@ import { SearchStudentComponent } from './admin/search-student/search-student.co
 import{SessionContentComponent} from './admin/session-content/session-content.component';
 import{TestComponent} from './test/test.component'
 import { from } from 'rxjs';
+import { CoursesComponent } from './admin/courses/courses.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path:'searchstudent', component:SearchStudentComponent},
   {path:'SessionContent', component:SessionContentComponent},
   {path:'test', component:TestComponent},
+  {path:'courses',component:CoursesComponent},
 
 
 ];
