@@ -32,7 +32,12 @@ import { SearchStudentComponent } from './admin/search-student/search-student.co
 import { SessionContentComponent } from './admin/session-content/session-content.component';
 import { AddCategoryComponent } from './admin/session-content/add-category/add-category.component';
 import { TestComponent } from './test/test.component';
- 
+import { CoursesComponent } from './admin/courses/courses.component';
+import { AddcategoryComponent } from './admin/courses/addcategory/addcategory.component';
+import { CourseContentComponent } from './admin/courses/course-content/course-content.component';
+import { AddContentComponent } from './admin/courses/course-content/add-content/add-content.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 @NgModule({
@@ -56,9 +61,14 @@ import { TestComponent } from './test/test.component';
         TestComponent,
         ModhomeComponent,
         AddmodComponent,
+        CoursesComponent,
+        AddcategoryComponent,
+        CourseContentComponent,
+        AddContentComponent,
     
   ],
   imports: [
+    MatSelectModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

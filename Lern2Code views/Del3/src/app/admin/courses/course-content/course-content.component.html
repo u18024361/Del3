@@ -17,12 +17,15 @@
     </div>
     <div class="topnav-right">
        
-        <div class="dot" >A</div>
+        <div class="dot">
+           
+            A
+        </div>
     </div>
   </nav>
 
   <div style="padding-top: 2rem;padding-bottom: 2rem;">
-    <div class="header" >Session content categories:</div>
+    <div class="header" >List of course content files:</div>
   </div>
 
   <div style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
@@ -32,43 +35,46 @@
       <input   type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
         aria-describedby="search-addon" />
       <span >
-       <button (click)="search()"  class="btn btn-primary"> <i class="fa fa-search"></i></button>
+       <button  class="btn btn-primary"> <i class="fa fa-search"></i></button>
       </span>
     </div>
     <br>
       <table class="table table-hover" style="width: 80%;margin: auto; padding-top: 2rem;">
           <thead >
             <tr>
+              <th scope="col">Content name</th>
               <th scope="col">Category name</th>
+              <th scope="col">Content type</th>
               <th scope="col"></th>
               <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>January</td>
+              <td>Typescript.mp4</td>
+              <td>Typescript</td>
+              <td>Video</td>
              
-              <td><button  class="btn btn-primary"><i class="fa fa-pencil"></i></button></td>
-              <td><button (click)="delete()" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+              <td><button class="btn btn-primary"><i class="fa fa-pencil"></i></button></td>
+              <td><button  (click)="delete()" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
             </tr>
             <tr>
-              <td>February</td>
+              <td>Typescript.pdf</td>
+              <td>Typescript</td>
+              <td>Notes</td>
               
               <td><button  class="btn btn-primary"><i class="fa fa-pencil"></i></button></td>
               <td><button  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
             </tr>
             <tr>
-              <td>March</td>
+              <td>Cheatsheet.pdf</td>
+              <td>Typescript</td>
+              <td>Notes</td>
             
               <td><button  class="btn btn-primary"><i class="fa fa-pencil"></i></button></td>
               <td><button  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
             </tr>
-            <tr>
-              <td>April</td>
-             
-              <td><button  class="btn btn-primary"><i class="fa fa-pencil"></i></button></td>
-              <td><button   class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-            </tr>
+           
           </tbody>
         </table>
   
@@ -76,13 +82,14 @@
   </div>
   <br>
   <div style="padding:0.4rem">
-  <button (click)="openDialog()" style="margin-left: 8rem;"  class="btn btn-info">Add Role</button>
-</div>
-  <br>
+    <button  style="margin-left: 8rem;" (click)="openDialog()" class="btn btn-info" >Add Content</button>
+    
+    
+    <button  style="margin-left: 1.5rem; width:9.5rem;"  class="btn btn-primary">Content category</button>
   
+  </div>
 
- 
-  <footer style="width:100%;position:absolute;">
+  <footer style="width:100%;position:absolute;bottom: 0;">
     <nav  id="foot" class="navbar ">
       <a class="navbar-brand" href="#">
        
@@ -99,5 +106,3 @@
       </div>
     </nav>
   </footer>
-
-  
