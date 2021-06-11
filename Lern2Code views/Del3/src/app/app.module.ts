@@ -51,6 +51,7 @@ import { DisplaystudentComponent } from './tutor/searchstudnet/displaystudent/di
 import { MessagingComponent } from './tutor/messaging/messaging.component';
 import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -91,6 +92,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
         SearchstudnetComponent,
         DisplaystudentComponent,
         MessagingComponent,
+        
+        
     
   ],
   imports: [
@@ -113,7 +116,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbLayoutModule,
     NbEvaIconsModule,
     NbTabsetModule,
-    NbStepperModule
+    NbStepperModule,
+    MatTabsModule,
     
   ],
   providers: [],
