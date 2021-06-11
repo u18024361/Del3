@@ -37,6 +37,12 @@ import { AddcategoryComponent } from './admin/courses/addcategory/addcategory.co
 import { CourseContentComponent } from './admin/courses/course-content/course-content.component';
 import { AddContentComponent } from './admin/courses/course-content/add-content/add-content.component';
 import {MatSelectModule} from '@angular/material/select';
+import { DegreehomeComponent } from './admin/degree/degreehome/degreehome.component';
+import { AdddegreeComponent } from './admin/degree/adddegree/adddegree.component';
+import { CoursehomeComponent } from './admin/mcourse/coursehome/coursehome.component';
+import { AddcourseComponent } from './admin/mcourse/addcourse/addcourse.component';
+import { SubhomeComponent } from './admin/subscriptions/subhome/subhome.component';
+import { AddsubComponent } from './admin/subscriptions/addsub/addsub.component';
 
 
 
@@ -65,6 +71,12 @@ import {MatSelectModule} from '@angular/material/select';
         AddcategoryComponent,
         CourseContentComponent,
         AddContentComponent,
+        DegreehomeComponent,
+        AdddegreeComponent,
+        CoursehomeComponent,
+        AddcourseComponent,
+        SubhomeComponent,
+        AddsubComponent,
     
   ],
   imports: [
