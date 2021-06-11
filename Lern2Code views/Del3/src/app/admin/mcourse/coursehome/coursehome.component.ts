@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import {MatDialog} from '@angular/material/dialog';
-import { AddmodComponent } from '../../module/addmod/addmod.component';
+import { AddcourseComponent } from '../addcourse/addcourse.component';
 
 @Component({
-  selector: 'app-modhome',
-  templateUrl: './modhome.component.html',
-  styleUrls: ['./modhome.component.scss']
+  selector: 'app-coursehome',
+  templateUrl: './coursehome.component.html',
+  styleUrls: ['./coursehome.component.scss']
 })
-export class ModhomeComponent implements OnInit {
+export class CoursehomeComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
@@ -17,9 +17,9 @@ export class ModhomeComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Module Exists',
-      text: "Module already exists. Please try again",
-      icon: 'error',
+      title: 'Delete Course',
+      text: "Are you sure you want to delete this course?",
+      icon: 'question',
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Okay'
@@ -27,7 +27,7 @@ export class ModhomeComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           'Deleted!',
-          'Module has been deleted.',
+          'Course has been deleted.',
           'success'
         )
       }
@@ -37,7 +37,7 @@ export class ModhomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to delete the Module?',
+      title: 'Are you sure you want to update the Course?',
       
       icon: 'question',
       showCancelButton: true,
@@ -48,14 +48,14 @@ export class ModhomeComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           'Saved!',
-          'Module has been created.',
+          'Course has been updated.',
           'success'
         )
       }
     })
   }
   openDialog(): void {
-    const dialogRef = this.dialog.open(AddmodComponent, {
+    const dialogRef = this.dialog.open(AddcourseComponent, {
       width: '350px',
       
     });
@@ -64,7 +64,7 @@ export class ModhomeComponent implements OnInit {
       Swal.fire({
       
         icon: 'success',
-        title: 'Module has been updated',
+        title: 'Course has been updated',
         confirmButtonText: 'Ok',
         
       })
@@ -81,6 +81,5 @@ export class ModhomeComponent implements OnInit {
       
     })
   }
-
 
 }

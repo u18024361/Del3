@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import {MatDialog} from '@angular/material/dialog';
-import { AddmodComponent } from '../../module/addmod/addmod.component';
+import { AdddegreeComponent } from '../adddegree/adddegree.component';
 
 @Component({
-  selector: 'app-modhome',
-  templateUrl: './modhome.component.html',
-  styleUrls: ['./modhome.component.scss']
+  selector: 'app-degreehome',
+  templateUrl: './degreehome.component.html',
+  styleUrls: ['./degreehome.component.scss']
 })
-export class ModhomeComponent implements OnInit {
+export class DegreehomeComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
@@ -17,8 +17,8 @@ export class ModhomeComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Module Exists',
-      text: "Module already exists. Please try again",
+      title: 'Degree Exists',
+      text: "Degree already exists. Please try again",
       icon: 'error',
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
@@ -27,7 +27,7 @@ export class ModhomeComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           'Deleted!',
-          'Module has been deleted.',
+          'Degree has been deleted.',
           'success'
         )
       }
@@ -37,7 +37,7 @@ export class ModhomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to delete the Module?',
+      title: 'Are you sure you want to delete the Degree?',
       
       icon: 'question',
       showCancelButton: true,
@@ -48,14 +48,14 @@ export class ModhomeComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           'Saved!',
-          'Module has been created.',
+          'Degree has been updated.',
           'success'
         )
       }
     })
   }
   openDialog(): void {
-    const dialogRef = this.dialog.open(AddmodComponent, {
+    const dialogRef = this.dialog.open(AdddegreeComponent, {
       width: '350px',
       
     });
@@ -64,7 +64,7 @@ export class ModhomeComponent implements OnInit {
       Swal.fire({
       
         icon: 'success',
-        title: 'Module has been updated',
+        title: 'Degree has been created',
         confirmButtonText: 'Ok',
         
       })
@@ -81,6 +81,5 @@ export class ModhomeComponent implements OnInit {
       
     })
   }
-
 
 }

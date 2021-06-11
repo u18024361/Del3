@@ -16,6 +16,9 @@ import{TestComponent} from './test/test.component'
 import { from } from 'rxjs';
 import { CoursesComponent } from './admin/courses/courses.component';
 import { CourseContentComponent } from './admin/courses/course-content/course-content.component';
+import { DegreehomeComponent } from './admin/degree/degreehome/degreehome.component';
+import { CoursehomeComponent } from './admin/mcourse/coursehome/coursehome.component';
+import { SubhomeComponent } from './admin/subscriptions/subhome/subhome.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -33,8 +36,11 @@ const routes: Routes = [
   {path:'searchstudent', component:SearchStudentComponent},
   {path:'SessionContent', component:SessionContentComponent},
   {path:'test', component:TestComponent},
-  {path:'courses',component:CoursesComponent},
+  {path:'coursecat',component:CoursesComponent},
   {path:'coursecontent', component:CourseContentComponent},
+  {path:'degree', component:DegreehomeComponent},
+  {path:'courses', component:CoursehomeComponent},
+  {path:'subscription', component:SubhomeComponent}
 
 
 ];
