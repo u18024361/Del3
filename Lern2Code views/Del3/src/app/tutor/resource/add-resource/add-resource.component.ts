@@ -1,19 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import {MatDialog} from '@angular/material/dialog';
-import { CreatemessageComponent } from './createmessage/createmessage.component';
+import { AddComponent } from '../add/add.component';
 
 @Component({
-  selector: 'app-messaging',
-  templateUrl: './messaging.component.html',
-  styleUrls: ['./messaging.component.scss'],
-  styles: [`
-  :host nb-tab {
-    padding: 1.25rem;
-  }
-`],
+  selector: 'app-add-resource',
+  templateUrl: './add-resource.component.html',
+  styleUrls: ['./add-resource.component.scss']
 })
-export class MessagingComponent implements OnInit {
+export class AddREsourceComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
@@ -22,7 +17,7 @@ export class MessagingComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Are you sure you want to delete the message',
+      title: 'Are you sure you want to delete the resource',
       
       icon: 'warning',
       showCancelButton: true,
@@ -33,15 +28,15 @@ export class MessagingComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           '',
-          'Sorry 24 hours has not passed. You can’t delete this message',
-          'warning'
+          'Successfully added resource',
+          'success'
         )
       }
     })
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(CreatemessageComponent, {
+    const dialogRef = this.dialog.open(AddComponent, {
       width: '350px',
       
     });
@@ -49,8 +44,8 @@ export class MessagingComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       Swal.fire({
       
-        icon: 'success',
-        title: 'message sent',
+        icon: 'error',
+        title: 'resource  already exists. Please try again',
         
         confirmButtonText: 'Ok',
         

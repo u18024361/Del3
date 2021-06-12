@@ -53,6 +53,11 @@ import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, } from 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {MatTabsModule} from '@angular/material/tabs';
 import { CreatemessageComponent } from './tutor/messaging/createmessage/createmessage.component';
+import { AddmessageComponent } from './tutor/searchstudnet/addmessage/addmessage.component';
+import { MeassagestudentComponent } from './tutor/messaging/meassagestudent/meassagestudent.component';
+import { ResourceComponent } from './tutor/resource/resource.component';
+import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
+import { AddComponent } from './tutor/resource/add/add.component';
 
 
 
@@ -94,6 +99,11 @@ import { CreatemessageComponent } from './tutor/messaging/createmessage/createme
         DisplaystudentComponent,
         MessagingComponent,
         CreatemessageComponent,
+        AddmessageComponent,
+        MeassagestudentComponent,
+        ResourceComponent,
+        AddREsourceComponent,
+        AddComponent,
         
         
     

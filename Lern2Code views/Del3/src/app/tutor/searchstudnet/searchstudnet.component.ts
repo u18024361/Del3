@@ -34,4 +34,24 @@ export class SearchstudnetComponent implements OnInit {
     });
   }
 
+  delete(){
+    Swal.fire({
+      title: 'Are you sure you want to send this message',
+      
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          '',
+          'Unable to send message',
+          'error'
+        )
+      }
+    })
+  }
+
 }
