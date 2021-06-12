@@ -52,6 +52,7 @@ import { MessagingComponent } from './tutor/messaging/messaging.component';
 import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {MatTabsModule} from '@angular/material/tabs';
+import { CreatemessageComponent } from './tutor/messaging/createmessage/createmessage.component';
 
 
 
@@ -92,6 +93,7 @@ import {MatTabsModule} from '@angular/material/tabs';
         SearchstudnetComponent,
         DisplaystudentComponent,
         MessagingComponent,
+        CreatemessageComponent,
         
         
     
