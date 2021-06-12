@@ -22,6 +22,10 @@ import { PaymentComponent } from './admin/payment/payment.component';
 import { ApplicationComponent } from './tutor/application/application.component';
 import { SearchstudnetComponent } from './tutor/searchstudnet/searchstudnet.component';
 import { MessagingComponent } from './tutor/messaging/messaging.component';
+import { MeassagestudentComponent } from './tutor/messaging/meassagestudent/meassagestudent.component';
+import { TutorComponent } from './tutor/tutor.component';
+import { ResourceComponent } from './tutor/resource/resource.component';
+import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -45,9 +49,12 @@ const routes: Routes = [
   {path:'courses', component:CoursehomeComponent},
   {path:'subscription', component:SubhomeComponent},
   {path:'payment',component:PaymentComponent},
-  {path:'studentSearch',component:SearchstudnetComponent},
+  {path:'studentSearchtutor',component:SearchstudnetComponent},
   {path:'messaging',component:MessagingComponent},
-
+  {path:'messagestudent',component:MeassagestudentComponent},
+  {path:'tutorhome',component:TutorComponent},
+  {path:'tutorresource',component:ResourceComponent},
+  {path:'addresource',component:AddREsourceComponent}
 
 ];
 
