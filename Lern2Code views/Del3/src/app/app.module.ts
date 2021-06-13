@@ -58,6 +58,14 @@ import { MeassagestudentComponent } from './tutor/messaging/meassagestudent/meas
 import { ResourceComponent } from './tutor/resource/resource.component';
 import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
 import { AddComponent } from './tutor/resource/add/add.component';
+import { MaintainComponent } from './tutor/maintain/maintain.component';
+import { ChangepasswordComponent } from './tutor/changepassword/changepassword.component';
+import { SessionsComponent } from './tutor/sessions/sessions.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component'
 
 
 
@@ -104,6 +112,11 @@ import { AddComponent } from './tutor/resource/add/add.component';
         ResourceComponent,
         AddREsourceComponent,
         AddComponent,
+        MaintainComponent,
+        ChangepasswordComponent,
+        SessionsComponent,
+        CreatesessionComponent,
+
         
         
     
@@ -130,9 +143,11 @@ import { AddComponent } from './tutor/resource/add/add.component';
     NbTabsetModule,
     NbStepperModule,
     MatTabsModule,
-    
+    MatDatepickerModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
