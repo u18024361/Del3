@@ -23,7 +23,7 @@
 
 
         <div style="padding-top: 2rem;padding-bottom: 1rem;">
-            <div class="header">Attendance</div>
+            <div class="header">Session Content</div>
         </div>
         
         <div style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
@@ -46,9 +46,8 @@
                         <th scope="col">Session Title</th>
                         <th scope="col">Module</th>
                         <th scope="col">Date</th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
+                        <th scope="col">Content</th>
+                
         
                     </tr>
                 </thead>
@@ -58,29 +57,21 @@
                         <td>Razor summary</td>
                         <td>INF272</td>
                         <td>2020/05/11</td>
-                        <td><button (click)="openDialog()" class="btn btn-success"><i class="fa fa-plus"aria-hidden="true"></i></button></td>
-                        <td><button (click)="nottaken()" class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
-                        <td><button (click)="delete()" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-        
+                        <td><button class="btn btn-success" (click)="SesContent()"> Content </button> </td>  
+    
                     </tr>
                     <tr>
                         <td>Model practice</td>
                         <td>INF272</td>
                         <td>2020/05/21</td>
-                        <td><button (click)="openDialog()" class="btn btn-success"><i class="fa fa-plus"
-                                    aria-hidden="true"></i></button></td>
-                        <td><button class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
-                        <td><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                        <td><button class="btn btn-success" (click)="SesContent()"> Content </button> </td>   
         
                     </tr>
                     <tr>
                         <td>Controller summary</td>
                         <td>INF272</td>
                         <td>2020/05/29</td>
-                        <td><button (click)="openDialog()" class="btn btn-success"><i class="fa fa-plus"
-                                    aria-hidden="true"></i></button></td>
-                        <td><button (click)="nottaken()"class="btn btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
-                        <td><button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                        <td><button class="btn btn-success" (click)="SesContent()"> Content </button> </td>   
         
                     </tr>
                 </tbody>

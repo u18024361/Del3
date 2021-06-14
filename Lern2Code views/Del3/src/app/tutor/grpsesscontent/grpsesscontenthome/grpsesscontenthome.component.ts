@@ -1,19 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import {MatDialog} from '@angular/material/dialog';
-import { AddattendanceComponent } from '../addattendance/addattendance.component';
+import { GrpsesscontentaddComponent } from '../grpsesscontentadd/grpsesscontentadd.component';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-attendance',
-  templateUrl: './attendance.component.html',
-  styleUrls: ['./attendance.component.scss']
+  selector: 'app-grpsesscontenthome',
+  templateUrl: './grpsesscontenthome.component.html',
+  styleUrls: ['./grpsesscontenthome.component.scss']
 })
-export class AttendanceComponent implements OnInit {
+export class GrpsesscontenthomeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  SesContent= function () {
+    this.router.navigateByUrl('/addgrpsesscontent');
+};
+
 
   delete(){
     Swal.fire({
@@ -75,7 +81,7 @@ export class AttendanceComponent implements OnInit {
 
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(AddattendanceComponent, {
+    const dialogRef = this.dialog.open(GrpsesscontentaddComponent, {
       width: '900px',
       
     });
@@ -93,5 +99,6 @@ export class AttendanceComponent implements OnInit {
   }
 
 
-  
+
+
 }
