@@ -1,4 +1,27 @@
+@import 'themes';
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+.calendar-container {
+  border: 1px solid transparent;
+  border-color: #fff #ddd;
+  margin: 0 2em 2em
+}
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /* You can add global styles to this file, and also import other style files */
+
+nb-layout-column{background-color: white; height: 100%
+
+};
+
+nnb-layout{
+  margin-top: 50rem; height: 100%
+}
+
+
 
 
 //bottom nav bar
@@ -70,13 +93,17 @@ body { font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   .dot {
+    padding: 0.5rem;
       margin-right: 3rem;
     height: 37px;
     width: 37px;
     background-color:$greentdo;
     border-radius: 50%;
-    text-align: center;
-    font-size: 25px;
+    text-align:center;
+    
+    font-size: 30px;
+
+    
   }
 
   #adminnav{
@@ -86,6 +113,7 @@ a{margin-left: 10rem;}
 
   //green headers
   .header{
+    padding: 0.5rem;
     
     background-color: $greentdo;
     color: whitesmoke;
@@ -99,3 +127,5 @@ a{margin-left: 10rem;}
    
     
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

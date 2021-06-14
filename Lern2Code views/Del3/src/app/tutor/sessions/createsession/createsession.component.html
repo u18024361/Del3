@@ -1,0 +1,253 @@
+<!-- <h5 style="text-align: center;">Create Session</h5>
+<hr>
+<form class="example-form" style="padding-top: 1.5rem;">
+<div class="row">
+<div class="col-md-6">
+
+</div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <mat-form-field appearance="outline" style="width: 15rem;">
+            <mat-label>Session Type</mat-label>
+            <select matNativeControl required>
+              <option value="volvo">Group</option>
+              <option value="saab">Individual</option>
+              
+            </select>
+          </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field class="example-full-width" >
+            <mat-label>Title:</mat-label>
+            <input matInput placeholder="Zacker" >
+          </mat-form-field>
+    </div>
+    <div class="col-md-4">
+        <mat-form-field class="example-full-width">
+            <mat-label>Link:</mat-label>
+            <input matInput placeholder="Zacker" >
+          </mat-form-field>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+            <mat-form-field appearance="outline" style="width: 15rem;">
+                <mat-label>University</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">University Of Pretoria</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="margin-left: 2rem;">
+            <mat-form-field appearance="outline">
+                <mat-label>Degree</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Bcom Informatics</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div  style="margin-left: 2rem;">
+            <mat-form-field appearance="outline">
+                <mat-label>Module</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">INF214</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <mat-form-field  appearance="outline">
+                    <mat-label>Date:</mat-label>
+                    <input matInput [matDatepicker]="picker"  >
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                     
+                  </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <div  style="margin-left: 2rem;">
+                <mat-form-field appearance="outline">
+                    <mat-label>Time</mat-label>
+                    <select matNativeControl required>
+                      <option value="9am">9-10 am</option>
+                      <option value="saab">Individual</option>
+                      
+                    </select>
+                  </mat-form-field>
+                </div>
+            </div>
+        </div>
+     
+  </form>
+
+  <div style="margin-left: 33%;">
+      <button class="btn btn-info" style="width: 8rem;">Create</button>
+       <button style="margin-left:1rem;width: 8rem;" class="btn btn-danger">Cancel</button>
+  </div>
+
+
+
+ -->
+
+
+
+ <!-- <h5 style="text-align: center;">Edit Session</h5>
+<hr>
+<form class="example-form" style="padding-top: 1.5rem;">
+<div class="row">
+<div class="col-md-6">
+
+</div>
+
+</div>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+            <mat-form-field appearance="outline" style="width: 15rem;">
+                <mat-label>University</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">University Of Pretoria</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="margin-left: 2rem;">
+            <mat-form-field appearance="outline">
+                <mat-label>Degree</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Bcom Informatics</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div  style="margin-left: 2rem;">
+            <mat-form-field appearance="outline">
+                <mat-label>Module</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">INF154</option>
+                  <option value="saab">Individual</option>
+                  
+                </select>
+              </mat-form-field>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <mat-form-field  appearance="outline">
+                    <mat-label>Date:</mat-label>
+                    <input matInput [matDatepicker]="picker"  >
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                     
+                  </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <div  style="margin-left: 2rem;">
+                <mat-form-field appearance="outline">
+                    <mat-label>Time</mat-label>
+                    <select matNativeControl required>
+                      <option value="9am">2-3 pm</option>
+                      <option value="saab">Individual</option>
+                      
+                    </select>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <mat-form-field class="example-full-width" >
+                    <mat-label>Link:</mat-label>
+                    <input matInput placeholder="Zacker" >
+                  </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div >
+                    <mat-form-field style="width: 14.5rem;"  >
+                        <mat-label>Title:</mat-label>
+                        <input matInput placeholder="Zacker" >
+                      </mat-form-field>
+                </div>
+            </div>
+        </div>
+     
+  </form>
+  <br>
+
+  <div style="margin-left: 33%;">
+      <button class="btn btn-info" style="width: 8rem;">Create</button>
+       <button style="margin-left:1rem;width: 8rem;" class="btn btn-danger">Cancel</button>
+  </div>
+
+
+
+ -->
+
+ <h5 style="text-align: center;">Individual Session</h5>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<h6>Module:COS211</h6>
+</div>
+<div class="col-md-6">
+  <h6>Date: 22/02/2021</h6>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+  <h6>Status: Booked</h6>
+  </div>
+  <div class="col-md-6">
+    <h6>Student Name: Rob</h6>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+    <h6>Time 5pm: Booked</h6>
+    </div>
+    <div class="col-md-6">
+      <h6>Link: https://us04web.zoom/785</h6>
+    </div>
+    </div>
+    <div style="margin: auto;">
+      <h6>Description:</h6><p>I want to learn blockchain</p>
+    </div>
+    <div style="margin-left: 40%;">
+      <br>
+      <button style="width: 7rem;" class="btn btn-primary">Ok</button>
+    </div>
+  
+
+
+
