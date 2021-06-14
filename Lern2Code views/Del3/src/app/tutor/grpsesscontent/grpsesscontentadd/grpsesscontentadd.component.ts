@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import {MatDialog} from '@angular/material/dialog';
-import { AddattendanceComponent } from '../addattendance/addattendance.component';
+import { AddgrpcontentComponent } from '../addgrpcontent/addgrpcontent.component';
 
 @Component({
-  selector: 'app-attendance',
-  templateUrl: './attendance.component.html',
-  styleUrls: ['./attendance.component.scss']
+  selector: 'app-grpsesscontentadd',
+  templateUrl: './grpsesscontentadd.component.html',
+  styleUrls: ['./grpsesscontentadd.component.scss']
 })
-export class AttendanceComponent implements OnInit {
+export class GrpsesscontentaddComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
@@ -45,14 +45,6 @@ export class AttendanceComponent implements OnInit {
     })
   }
 
-  nottaken(){
-    Swal.fire({
-      icon: 'error',
-      title: 'The attendance for this session has not been taken yet ',
-      confirmButtonText: 'Okay',
-      
-    })
-  }
 
   confirmed(){
     Swal.fire({
@@ -75,7 +67,7 @@ export class AttendanceComponent implements OnInit {
 
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(AddattendanceComponent, {
+    const dialogRef = this.dialog.open(AddgrpcontentComponent, {
       width: '900px',
       
     });
@@ -91,7 +83,4 @@ export class AttendanceComponent implements OnInit {
       
     });
   }
-
-
-  
 }

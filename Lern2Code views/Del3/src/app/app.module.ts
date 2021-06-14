@@ -70,6 +70,9 @@ import { SchedulerModule } from 'angular-calendar-scheduler';
 
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsesscontenthome/grpsesscontenthome.component';
+import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
+import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/addgrpcontent.component';
 
 
 
@@ -121,6 +124,9 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         SessionsComponent,
         CreatesessionComponent,
         AddattendanceComponent,
+        GrpsesscontenthomeComponent,
+        GrpsesscontentaddComponent,
+        AddgrpcontentComponent,
 
         
         
