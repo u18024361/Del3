@@ -75,6 +75,7 @@ import { RegisterstudentComponent } from './student/registerstudent/registerstud
 import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsesscontenthome/grpsesscontenthome.component';
 import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
 import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/addgrpcontent.component';
+import { TutorssComponent } from './student/tutors/tutors.component';
 
 
 
@@ -131,6 +132,7 @@ import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/add
         GrpsesscontenthomeComponent,
         GrpsesscontentaddComponent,
         AddgrpcontentComponent,
+        TutorssComponent,
 
         
         
