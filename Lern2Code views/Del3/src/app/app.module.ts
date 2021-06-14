@@ -49,7 +49,7 @@ import { ApplicationComponent } from './tutor/application/application.component'
 import { SearchstudnetComponent } from './tutor/searchstudnet/searchstudnet.component';
 import { DisplaystudentComponent } from './tutor/searchstudnet/displaystudent/displaystudent.component';
 import { MessagingComponent } from './tutor/messaging/messaging.component';
-import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, NbSidebarModule  } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {MatTabsModule} from '@angular/material/tabs';
 import { CreatemessageComponent } from './tutor/messaging/createmessage/createmessage.component';
@@ -62,10 +62,9 @@ import { MaintainComponent } from './tutor/maintain/maintain.component';
 import { ChangepasswordComponent } from './tutor/changepassword/changepassword.component';
 import { SessionsComponent } from './tutor/sessions/sessions.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-
-
 import { MatNativeDateModule } from '@angular/material/core';
-import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component'
+import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component';
+import { AddattendanceComponent } from './tutor/addattendance/addattendance.component'
 
 
 
@@ -116,6 +115,7 @@ import { CreatesessionComponent } from './tutor/sessions/createsession/createses
         ChangepasswordComponent,
         SessionsComponent,
         CreatesessionComponent,
+        AddattendanceComponent,
 
         
         
@@ -138,6 +138,7 @@ import { CreatesessionComponent } from './tutor/sessions/createsession/createses
     MatFormFieldModule,
     MatMenuModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    NbSidebarModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule,
     NbTabsetModule,
