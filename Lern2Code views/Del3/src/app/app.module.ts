@@ -70,6 +70,8 @@ import { SchedulerModule } from 'angular-calendar-scheduler';
 
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { StudentComponent } from './student/student.component';
+import { RegisterstudentComponent } from './student/registerstudent/registerstudent.component';
 
 
 
@@ -121,6 +123,8 @@ import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
         SessionsComponent,
         CreatesessionComponent,
         AddattendanceComponent,
+        StudentComponent,
+        RegisterstudentComponent,
 
         
         

@@ -28,6 +28,8 @@ import { ResourceComponent } from './tutor/resource/resource.component';
 import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
 import { SessionsComponent } from './tutor/sessions/sessions.component';
 import { AttendanceComponent } from './tutor/attendance/attendance.component';
+import { StudentComponent } from './student/student.component';
+import { RegisterstudentComponent } from './student/registerstudent/registerstudent.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -58,7 +60,13 @@ const routes: Routes = [
   {path:'tutorresource',component:ResourceComponent},
   {path:'addresource',component:AddREsourceComponent},
   {path:'Sessions',component:SessionsComponent},
-  {path:'attendance', component:AttendanceComponent}
+  {path:'attendance', component:AttendanceComponent},
+  {path:'studenthome',component:StudentComponent},
+
+
+
+
+  {path:'studentregister',component:RegisterstudentComponent}
 
 ];
 

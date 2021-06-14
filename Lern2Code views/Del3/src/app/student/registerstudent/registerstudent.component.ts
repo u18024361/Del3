@@ -2,20 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-application',
-  templateUrl: './application.component.html',
-  styleUrls: ['./application.component.scss']
+  selector: 'app-registerstudent',
+  templateUrl: './registerstudent.component.html',
+  styleUrls: ['./registerstudent.component.scss']
 })
-export class ApplicationComponent implements OnInit {
+export class RegisterstudentComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
   delete(){
     Swal.fire({
-      title: 'Are you sure you want to apply',
+      title: ' Are you sure you want to register',
       
       icon: 'warning',
       showCancelButton: true,
@@ -27,7 +26,7 @@ export class ApplicationComponent implements OnInit {
         Swal.fire({
       
           icon: 'error',
-          title: 'Application already exists. Please try again',
+          title: 'Unable to Register',
           
           confirmButtonText: 'Ok',
           
@@ -40,12 +39,11 @@ export class ApplicationComponent implements OnInit {
     Swal.fire({
       
       icon: 'error',
-      title: 'Application already exists. Please try again',
+      title: 'This username is already taken',
       
       confirmButtonText: 'Ok',
       
     })
   }
-
 
 }
