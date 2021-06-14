@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "search-student.component.scss"
+    ],
+    "names": [],
+    "file": "search-student.component.css"
+}

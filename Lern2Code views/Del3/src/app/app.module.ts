@@ -64,7 +64,12 @@ import { SessionsComponent } from './tutor/sessions/sessions.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component';
-import { AddattendanceComponent } from './tutor/addattendance/addattendance.component'
+import { AddattendanceComponent } from './tutor/addattendance/addattendance.component';
+
+import { SchedulerModule } from 'angular-calendar-scheduler';
+
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
 
@@ -146,7 +151,12 @@ import { AddattendanceComponent } from './tutor/addattendance/addattendance.comp
     MatTabsModule,
     MatDatepickerModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    SchedulerModule.forRoot({ locale: 'en', headerDateFormat: 'daysRange' }),
   ],
   providers: [  ],
   bootstrap: [AppComponent]
