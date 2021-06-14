@@ -54,6 +54,7 @@ export class DegreehomeComponent implements OnInit {
       }
     })
   }
+  
   openDialog(): void {
     const dialogRef = this.dialog.open(AdddegreeComponent, {
       width: '350px',

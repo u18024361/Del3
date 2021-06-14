@@ -27,6 +27,7 @@ import { TutorComponent } from './tutor/tutor.component';
 import { ResourceComponent } from './tutor/resource/resource.component';
 import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
 import { SessionsComponent } from './tutor/sessions/sessions.component';
+import { AttendanceComponent } from './tutor/attendance/attendance.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -56,7 +57,8 @@ const routes: Routes = [
   {path:'tutorhome',component:TutorComponent},
   {path:'tutorresource',component:ResourceComponent},
   {path:'addresource',component:AddREsourceComponent},
-  {path:'Sessions',component:SessionsComponent}
+  {path:'Sessions',component:SessionsComponent},
+  {path:'attendance', component:AttendanceComponent}
 
 ];
 
