@@ -30,6 +30,9 @@ import { SessionsComponent } from './tutor/sessions/sessions.component';
 import { AttendanceComponent } from './tutor/attendance/attendance.component';
 import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsesscontenthome/grpsesscontenthome.component';
 import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
+import { StudentComponent } from './student/student.component';
+import { RegisterstudentComponent } from './student/registerstudent/registerstudent.component';
+import { TutorssComponent } from './student/tutors/tutors.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -62,7 +65,10 @@ const routes: Routes = [
   {path:'Sessions',component:SessionsComponent},
   {path:'attendance', component:AttendanceComponent},
   {path:'grpsesscontent', component:GrpsesscontenthomeComponent},
-  {path:'addgrpsesscontent', component:GrpsesscontentaddComponent}
+  {path:'addgrpsesscontent', component:GrpsesscontentaddComponent},
+  {path:'studenthome',component:StudentComponent},
+  {path:'Registerstudent',component:RegisterstudentComponent},
+  {path:'Tutors',component:TutorssComponent}
 
 ];
 
