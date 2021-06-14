@@ -31,7 +31,6 @@ import { AddmodComponent } from './admin/module/addmod/addmod.component';
 import { SearchStudentComponent } from './admin/search-student/search-student.component';
 import { SessionContentComponent } from './admin/session-content/session-content.component';
 import { AddCategoryComponent } from './admin/session-content/add-category/add-category.component';
-import { TestComponent } from './test/test.component';
 import { CoursesComponent } from './admin/courses/courses.component';
 import { AddcategoryComponent } from './admin/courses/addcategory/addcategory.component';
 import { CourseContentComponent } from './admin/courses/course-content/course-content.component';
@@ -43,6 +42,30 @@ import { CoursehomeComponent } from './admin/mcourse/coursehome/coursehome.compo
 import { AddcourseComponent } from './admin/mcourse/addcourse/addcourse.component';
 import { SubhomeComponent } from './admin/subscriptions/subhome/subhome.component';
 import { AddsubComponent } from './admin/subscriptions/addsub/addsub.component';
+import { PaymentComponent } from './admin/payment/payment.component';
+import { UploadpaymenComponent } from './admin/payment/uploadpaymen/uploadpaymen.component';
+import { TutorComponent } from './tutor/tutor.component';
+import { ApplicationComponent } from './tutor/application/application.component';
+import { SearchstudnetComponent } from './tutor/searchstudnet/searchstudnet.component';
+import { DisplaystudentComponent } from './tutor/searchstudnet/displaystudent/displaystudent.component';
+import { MessagingComponent } from './tutor/messaging/messaging.component';
+import { NbThemeModule, NbLayoutModule, NbTabsetModule, NbStepperModule, } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import {MatTabsModule} from '@angular/material/tabs';
+import { CreatemessageComponent } from './tutor/messaging/createmessage/createmessage.component';
+import { AddmessageComponent } from './tutor/searchstudnet/addmessage/addmessage.component';
+import { MeassagestudentComponent } from './tutor/messaging/meassagestudent/meassagestudent.component';
+import { ResourceComponent } from './tutor/resource/resource.component';
+import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
+import { AddComponent } from './tutor/resource/add/add.component';
+import { MaintainComponent } from './tutor/maintain/maintain.component';
+import { ChangepasswordComponent } from './tutor/changepassword/changepassword.component';
+import { SessionsComponent } from './tutor/sessions/sessions.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component'
 
 
 
@@ -64,7 +87,6 @@ import { AddsubComponent } from './admin/subscriptions/addsub/addsub.component';
         SearchStudentComponent,
         SessionContentComponent,
         AddCategoryComponent,
-        TestComponent,
         ModhomeComponent,
         AddmodComponent,
         CoursesComponent,
@@ -77,6 +99,26 @@ import { AddsubComponent } from './admin/subscriptions/addsub/addsub.component';
         AddcourseComponent,
         SubhomeComponent,
         AddsubComponent,
+        PaymentComponent,
+        UploadpaymenComponent,
+        TutorComponent,
+        ApplicationComponent,
+        SearchstudnetComponent,
+        DisplaystudentComponent,
+        MessagingComponent,
+        CreatemessageComponent,
+        AddmessageComponent,
+        MeassagestudentComponent,
+        ResourceComponent,
+        AddREsourceComponent,
+        AddComponent,
+        MaintainComponent,
+        ChangepasswordComponent,
+        SessionsComponent,
+        CreatesessionComponent,
+
+        
+        
     
   ],
   imports: [
@@ -94,10 +136,18 @@ import { AddsubComponent } from './admin/subscriptions/addsub/addsub.component';
     ChartsModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatMenuModule
-    
+    MatMenuModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbTabsetModule,
+    NbStepperModule,
+    MatTabsModule,
+    MatDatepickerModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

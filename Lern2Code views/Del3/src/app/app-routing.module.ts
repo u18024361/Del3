@@ -12,13 +12,21 @@ import { ModhomeComponent } from './admin/university/modhome/modhome.component';
 import { AddmodComponent } from './admin/module/addmod/addmod.component';
 import { SearchStudentComponent } from './admin/search-student/search-student.component';
 import{SessionContentComponent} from './admin/session-content/session-content.component';
-import{TestComponent} from './test/test.component'
 import { from } from 'rxjs';
 import { CoursesComponent } from './admin/courses/courses.component';
 import { CourseContentComponent } from './admin/courses/course-content/course-content.component';
 import { DegreehomeComponent } from './admin/degree/degreehome/degreehome.component';
 import { CoursehomeComponent } from './admin/mcourse/coursehome/coursehome.component';
 import { SubhomeComponent } from './admin/subscriptions/subhome/subhome.component';
+import { PaymentComponent } from './admin/payment/payment.component';
+import { ApplicationComponent } from './tutor/application/application.component';
+import { SearchstudnetComponent } from './tutor/searchstudnet/searchstudnet.component';
+import { MessagingComponent } from './tutor/messaging/messaging.component';
+import { MeassagestudentComponent } from './tutor/messaging/meassagestudent/meassagestudent.component';
+import { TutorComponent } from './tutor/tutor.component';
+import { ResourceComponent } from './tutor/resource/resource.component';
+import { AddREsourceComponent } from './tutor/resource/add-resource/add-resource.component';
+import { SessionsComponent } from './tutor/sessions/sessions.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -35,13 +43,20 @@ const routes: Routes = [
   {path:'adduniversity', component:AdduniComponent},
   {path:'searchstudent', component:SearchStudentComponent},
   {path:'SessionContent', component:SessionContentComponent},
-  {path:'test', component:TestComponent},
+  {path:'Application', component:ApplicationComponent},
   {path:'coursecat',component:CoursesComponent},
   {path:'coursecontent', component:CourseContentComponent},
   {path:'degree', component:DegreehomeComponent},
   {path:'courses', component:CoursehomeComponent},
-  {path:'subscription', component:SubhomeComponent}
-
+  {path:'subscription', component:SubhomeComponent},
+  {path:'payment',component:PaymentComponent},
+  {path:'studentSearchtutor',component:SearchstudnetComponent},
+  {path:'messaging',component:MessagingComponent},
+  {path:'messagestudent',component:MeassagestudentComponent},
+  {path:'tutorhome',component:TutorComponent},
+  {path:'tutorresource',component:ResourceComponent},
+  {path:'addresource',component:AddREsourceComponent},
+  {path:'Sessions',component:SessionsComponent}
 
 ];
 

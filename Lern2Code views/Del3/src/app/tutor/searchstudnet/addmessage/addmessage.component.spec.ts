@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DegreehomeComponent } from './degreehome.component';
+import { AddmessageComponent } from './addmessage.component';
 
-describe('DegreehomeComponent', () => {
-  let component: DegreehomeComponent;
-  let fixture: ComponentFixture<DegreehomeComponent>;
+describe('AddmessageComponent', () => {
+  let component: AddmessageComponent;
+  let fixture: ComponentFixture<AddmessageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DegreehomeComponent ]
+      declarations: [ AddmessageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DegreehomeComponent);
+    fixture = TestBed.createComponent(AddmessageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
