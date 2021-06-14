@@ -72,6 +72,9 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { StudentComponent } from './student/student.component';
 import { RegisterstudentComponent } from './student/registerstudent/registerstudent.component';
+import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsesscontenthome/grpsesscontenthome.component';
+import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
+import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/addgrpcontent.component';
 
 
 
@@ -125,6 +128,9 @@ import { RegisterstudentComponent } from './student/registerstudent/registerstud
         AddattendanceComponent,
         StudentComponent,
         RegisterstudentComponent,
+        GrpsesscontenthomeComponent,
+        GrpsesscontentaddComponent,
+        AddgrpcontentComponent,
 
         
         
