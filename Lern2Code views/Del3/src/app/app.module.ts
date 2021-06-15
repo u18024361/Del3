@@ -76,6 +76,10 @@ import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsessconte
 import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
 import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/addgrpcontent.component';
 import { TutorssComponent } from './student/tutors/tutors.component';
+import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
+import { PopupComponent } from './student/maintainstudent/popup/popup.component';
+import { GroupsessionComponent } from './student/groupsession/groupsession.component';
+import { DisplaysessionComponent } from './student/groupsession/displaysession/displaysession.component';
 
 
 
@@ -133,6 +137,10 @@ import { TutorssComponent } from './student/tutors/tutors.component';
         GrpsesscontentaddComponent,
         AddgrpcontentComponent,
         TutorssComponent,
+        MaintainstudentComponent,
+        PopupComponent,
+        GroupsessionComponent,
+        DisplaysessionComponent,
 
         
         
