@@ -80,6 +80,9 @@ import { MaintainstudentComponent } from './student/maintainstudent/maintainstud
 import { PopupComponent } from './student/maintainstudent/popup/popup.component';
 import { GroupsessionComponent } from './student/groupsession/groupsession.component';
 import { DisplaysessionComponent } from './student/groupsession/displaysession/displaysession.component';
+import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
+import { BookComponent } from './student/individualsession/book/book.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -141,12 +144,15 @@ import { DisplaysessionComponent } from './student/groupsession/displaysession/d
         PopupComponent,
         GroupsessionComponent,
         DisplaysessionComponent,
+        IndividualsessionComponent,
+        BookComponent,
 
         
         
     
   ],
   imports: [
+    MatTooltipModule,
     MatSelectModule,
     BrowserModule,
     AppRoutingModule,
