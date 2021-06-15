@@ -39,6 +39,9 @@ import { ResourcehomeComponent } from './student/resourcehome/resourcehome.compo
 import { SubscriptionshomeComponent } from './student/subscriptionshome/subscriptionshome.component';
 import { GrpsesscontentComponent } from './student/grpsesscontent/grpsesscontent.component';
 import { ViewgrpcontentComponent } from './student/grpsesscontent/viewgrpcontent/viewgrpcontent.component';
+import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
+import { GroupsessionComponent } from './student/groupsession/groupsession.component';
+import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -81,6 +84,10 @@ const routes: Routes = [
   {path:'viewsubscriptions', component:SubscriptionshomeComponent},
   {path:'studentgrpcontent', component:GrpsesscontentComponent},
   {path:'viewgrpcontent', component:ViewgrpcontentComponent}
+  {path:'Tutors',component:TutorssComponent},
+  {path:'editstudent',component:MaintainstudentComponent},
+  {path:'groupsession',component:GroupsessionComponent},
+  {path:'individualsession',component:IndividualsessionComponent}
 
 ];
 
