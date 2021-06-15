@@ -33,6 +33,12 @@ import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsessconten
 import { StudentComponent } from './student/student.component';
 import { RegisterstudentComponent } from './student/registerstudent/registerstudent.component';
 import { TutorssComponent } from './student/tutors/tutors.component';
+import { MessagehomeComponent } from './student/messaging/messagehome/messagehome.component';
+import { FeddbackhomeComponent } from './student/feedback/feddbackhome/feddbackhome.component';
+import { ResourcehomeComponent } from './student/resourcehome/resourcehome.component';
+import { SubscriptionshomeComponent } from './student/subscriptionshome/subscriptionshome.component';
+import { GrpsesscontentComponent } from './student/grpsesscontent/grpsesscontent.component';
+import { ViewgrpcontentComponent } from './student/grpsesscontent/viewgrpcontent/viewgrpcontent.component';
 import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
 import { GroupsessionComponent } from './student/groupsession/groupsession.component';
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
@@ -61,7 +67,7 @@ const routes: Routes = [
   {path:'subscription', component:SubhomeComponent},
   {path:'payment',component:PaymentComponent},
   {path:'studentSearchtutor',component:SearchstudnetComponent},
-  {path:'messaging',component:MessagingComponent},
+  {path:'tutormessaging',component:MessagingComponent},
   {path:'messagestudent',component:MeassagestudentComponent},
   {path:'tutorhome',component:TutorComponent},
   {path:'tutorresource',component:ResourceComponent},
@@ -72,6 +78,13 @@ const routes: Routes = [
   {path:'addgrpsesscontent', component:GrpsesscontentaddComponent},
   {path:'studenthome',component:StudentComponent},
   {path:'Registerstudent',component:RegisterstudentComponent},
+  {path:'Tutors',component:TutorssComponent},
+  {path:'studentmsghome', component:MessagehomeComponent  },
+  {path:'feedback', component:FeddbackhomeComponent},
+  {path:'resource', component:ResourcehomeComponent},
+  {path:'viewsubscriptions', component:SubscriptionshomeComponent},
+  {path:'studentgrpcontent', component:GrpsesscontentComponent},
+  {path:'viewgrpcontent', component:ViewgrpcontentComponent}
   {path:'Tutors',component:TutorssComponent},
   {path:'editstudent',component:MaintainstudentComponent},
   {path:'groupsession',component:GroupsessionComponent},

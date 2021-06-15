@@ -1,0 +1,22 @@
+<h5 style="text-align: center;">New Message</h5>
+<hr>
+
+<mat-form-field appearance="fill">
+    <mat-label>Select Tutor</mat-label>
+    <mat-select>
+      <mat-option value="one">Bea Scheepers</mat-option>
+      <mat-option value="two">Kyla Foxcroft-Jones</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+  
+
+  <div style="margin: auto;padding-top: 1rem;">
+    <button (click)="confirmed()" style="width:6rem" class="btn btn-info">Send</button>
+    <button style="margin-left: 2rem;width:6rem" class="btn btn-danger">Cancel</button>
+</div>
+

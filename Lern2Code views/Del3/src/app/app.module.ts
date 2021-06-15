@@ -76,6 +76,15 @@ import { GrpsesscontenthomeComponent } from './tutor/grpsesscontent/grpsessconte
 import { GrpsesscontentaddComponent } from './tutor/grpsesscontent/grpsesscontentadd/grpsesscontentadd.component';
 import { AddgrpcontentComponent } from './tutor/grpsesscontent/addgrpcontent/addgrpcontent.component';
 import { TutorssComponent } from './student/tutors/tutors.component';
+import { MessagehomeComponent } from './student/messaging/messagehome/messagehome.component';
+import { SendmessageComponent } from './student/messaging/sendmessage/sendmessage.component';
+import { FeddbackhomeComponent } from './student/feedback/feddbackhome/feddbackhome.component';
+import { AddfeedbackComponent } from './student/feedback/addfeedback/addfeedback.component';
+import { ResourcehomeComponent } from './student/resourcehome/resourcehome.component';
+import { SubscriptionshomeComponent } from './student/subscriptionshome/subscriptionshome.component';
+import { GrpsesscontentComponent } from './student/grpsesscontent/grpsesscontent.component';
+import { ViewgrpcontentComponent } from './student/grpsesscontent/viewgrpcontent/viewgrpcontent.component';
+import { WatchvideoComponent } from './student/grpsesscontent/watchvideo/watchvideo.component';
 import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
 import { PopupComponent } from './student/maintainstudent/popup/popup.component';
 import { GroupsessionComponent } from './student/groupsession/groupsession.component';
@@ -141,6 +150,15 @@ import { ShopComponent } from './student/shop/shop.component';
         GrpsesscontentaddComponent,
         AddgrpcontentComponent,
         TutorssComponent,
+        MessagehomeComponent,
+        SendmessageComponent,
+        FeddbackhomeComponent,
+        AddfeedbackComponent,
+        ResourcehomeComponent,
+        SubscriptionshomeComponent,
+        GrpsesscontentComponent,
+        ViewgrpcontentComponent,
+        WatchvideoComponent,
         MaintainstudentComponent,
         PopupComponent,
         GroupsessionComponent,
