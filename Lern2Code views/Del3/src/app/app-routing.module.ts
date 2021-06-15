@@ -36,6 +36,7 @@ import { TutorssComponent } from './student/tutors/tutors.component';
 import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
 import { GroupsessionComponent } from './student/groupsession/groupsession.component';
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
+import { ShopComponent } from './student/shop/shop.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -74,7 +75,8 @@ const routes: Routes = [
   {path:'Tutors',component:TutorssComponent},
   {path:'editstudent',component:MaintainstudentComponent},
   {path:'groupsession',component:GroupsessionComponent},
-  {path:'individualsession',component:IndividualsessionComponent}
+  {path:'individualsession',component:IndividualsessionComponent},
+  {path:'shop',component:ShopComponent}
 
 ];
 
