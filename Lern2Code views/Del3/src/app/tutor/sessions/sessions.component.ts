@@ -206,7 +206,7 @@ eventTimesChanged({ event, newStart, newEnd, type }: SchedulerEventTimesChangedE
   openDialog(): void {
     const dialogRef = this.dialog.open(CreatesessionComponent, {
       width: '850px',
-      height:'420px'
+      height:'350px'
       
     });
   
