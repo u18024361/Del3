@@ -44,6 +44,7 @@ import { GroupsessionComponent } from './student/groupsession/groupsession.compo
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
 import { ShopComponent } from './student/shop/shop.component';
 import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
+import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -92,6 +93,7 @@ const routes: Routes = [
   {path:'individualsession',component:IndividualsessionComponent},
   {path:'shop',component:ShopComponent},
   {path:'viewcourse',component:ViewcoursecontentComponent},
+  {path:'createtutor', component:CreatetutorComponent}
 
 ];
 
