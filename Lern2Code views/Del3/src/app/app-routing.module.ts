@@ -44,6 +44,10 @@ import { GroupsessionComponent } from './student/groupsession/groupsession.compo
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
 import { ShopComponent } from './student/shop/shop.component';
 import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
+import { PlansComponent } from './student/plans/plans.component';
+import { AboutComponent } from './login/about/about.component';
+import { ContentComponent } from './login/content/content.component';
+import { LoginshopComponent } from './login/loginshop/loginshop.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -92,6 +96,10 @@ const routes: Routes = [
   {path:'individualsession',component:IndividualsessionComponent},
   {path:'shop',component:ShopComponent},
   {path:'viewcourse',component:ViewcoursecontentComponent},
+  {path:'plans',component:PlansComponent},
+  {path:'about',component:AboutComponent},
+  {path:'content',component:ContentComponent},
+  {path:'loginshop',component:LoginshopComponent},
 
 ];
 
