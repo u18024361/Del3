@@ -85,6 +85,15 @@ import { SubscriptionshomeComponent } from './student/subscriptionshome/subscrip
 import { GrpsesscontentComponent } from './student/grpsesscontent/grpsesscontent.component';
 import { ViewgrpcontentComponent } from './student/grpsesscontent/viewgrpcontent/viewgrpcontent.component';
 import { WatchvideoComponent } from './student/grpsesscontent/watchvideo/watchvideo.component';
+import { MaintainstudentComponent } from './student/maintainstudent/maintainstudent.component';
+import { PopupComponent } from './student/maintainstudent/popup/popup.component';
+import { GroupsessionComponent } from './student/groupsession/groupsession.component';
+import { DisplaysessionComponent } from './student/groupsession/displaysession/displaysession.component';
+import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
+import { BookComponent } from './student/individualsession/book/book.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { ShopComponent } from './student/shop/shop.component';
+import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
 
 
 
@@ -151,12 +160,21 @@ import { WatchvideoComponent } from './student/grpsesscontent/watchvideo/watchvi
         GrpsesscontentComponent,
         ViewgrpcontentComponent,
         WatchvideoComponent,
+        MaintainstudentComponent,
+        PopupComponent,
+        GroupsessionComponent,
+        DisplaysessionComponent,
+        IndividualsessionComponent,
+        BookComponent,
+        ShopComponent,
+        ViewcoursecontentComponent,
 
         
         
     
   ],
   imports: [
+    MatTooltipModule,
     MatSelectModule,
     BrowserModule,
     AppRoutingModule,
