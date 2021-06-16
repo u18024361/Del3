@@ -53,7 +53,7 @@ nnb-layout{
 $navcolor: rgb(44, 51, 54);
 //color of tdo
 $greentdo:rgb(0, 156, 158);
-
+.mat-menu-panel.my-class { width: 400px;height: 300px; }
 //makes secreen now have white gaps
 html, body {
     max-width: 100%;

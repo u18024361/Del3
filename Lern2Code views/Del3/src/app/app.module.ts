@@ -92,6 +92,8 @@ import { DisplaysessionComponent } from './student/groupsession/displaysession/d
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
 import { BookComponent } from './student/individualsession/book/book.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ShopComponent } from './student/shop/shop.component';
+import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
 
 
 
@@ -164,6 +166,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
         DisplaysessionComponent,
         IndividualsessionComponent,
         BookComponent,
+        ShopComponent,
+        ViewcoursecontentComponent,
 
         
         
