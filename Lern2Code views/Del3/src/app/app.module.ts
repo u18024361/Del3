@@ -93,6 +93,7 @@ import { IndividualsessionComponent } from './student/individualsession/individu
 import { BookComponent } from './student/individualsession/book/book.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ShopComponent } from './student/shop/shop.component';
+import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
 
 
 
@@ -166,6 +167,7 @@ import { ShopComponent } from './student/shop/shop.component';
         IndividualsessionComponent,
         BookComponent,
         ShopComponent,
+        ViewcoursecontentComponent,
 
         
         

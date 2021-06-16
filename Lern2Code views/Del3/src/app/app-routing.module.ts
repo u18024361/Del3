@@ -43,6 +43,7 @@ import { MaintainstudentComponent } from './student/maintainstudent/maintainstud
 import { GroupsessionComponent } from './student/groupsession/groupsession.component';
 import { IndividualsessionComponent } from './student/individualsession/individualsession.component';
 import { ShopComponent } from './student/shop/shop.component';
+import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -84,12 +85,13 @@ const routes: Routes = [
   {path:'resource', component:ResourcehomeComponent},
   {path:'viewsubscriptions', component:SubscriptionshomeComponent},
   {path:'studentgrpcontent', component:GrpsesscontentComponent},
-  {path:'viewgrpcontent', component:ViewgrpcontentComponent}
+  {path:'viewgrpcontent', component:ViewgrpcontentComponent},
   {path:'Tutors',component:TutorssComponent},
   {path:'editstudent',component:MaintainstudentComponent},
   {path:'groupsession',component:GroupsessionComponent},
   {path:'individualsession',component:IndividualsessionComponent},
-  {path:'shop',component:ShopComponent}
+  {path:'shop',component:ShopComponent},
+  {path:'viewcourse',component:ViewcoursecontentComponent},
 
 ];
 

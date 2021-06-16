@@ -12,7 +12,7 @@
       >TutorDevOps</span
     >
     <div class="right" style="margin-left: 2rem;">
-        <span  style="color: whitesmoke;"><i [matMenuTriggerFor]="menu" style="color: whitesmoke;font-size: large;" class="fa fa-shopping-cart" aria-hidden="true"></i> (0)  </span>
+        <span  style="color: whitesmoke;"><i [matMenuTriggerFor]="menu" style="color: whitesmoke;font-size: large;" class="fa fa-shopping-cart" aria-hidden="true"></i> (1)  </span>
         
        
         <span style="color: whitesmoke; margin-right: 2rem;padding-left: 1.5rem;">Home</span>
@@ -32,7 +32,7 @@
     <h6 style="margin-left: 0.5rem;text-decoration: underline;">Subscriptions</h6>
     
     <ul>
-        <li>Standard(1) R400 <i style="float: right;margin-right: 1rem;" class="fa fa-times" aria-hidden="true"></i></li>
+        <li>Standard(1) R400 <i (click)="delete()" style="float: right;margin-right: 1rem;" class="fa fa-times" aria-hidden="true"></i></li>
     </ul>
     <h6 style="margin-left: 0.5rem;text-decoration: underline;">Short Courses</h6>
     
