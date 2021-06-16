@@ -21,91 +21,97 @@
   </div>
 </nav>
 
-<div class="row" style="padding-top: 1.5rem">
-  <div class="col md-12">
-    <div>
-      <h1
-        style="
-          text-align: center;
-          color: rgb(0, 156, 158);
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        "
-      >
-        &lt; TDO &gt;
-      </h1>
-    </div>
-    <div>
-      <h2
-        style="
-          text-align: center;
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        "
-      >
-        Maximize Your Potential
-      </h2>
-    </div>
-  </div>
-</div>
-
-<div class="row" style="padding-top: 2rem;">
-  <div class="col-md-6">
-    <div style="margin-left: 10rem">
-      <img 
-        src="../.././assets/pics/landing page.jpg"
-        width="458"
-        height="432"
-        class="d-inline-block align-top"
-        alt=""
-      />
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div
-      class="row"
-      style="
-        border-radius: 25px;
-        background-color: white;
-        width: 23rem;
-        height: 24.5rem;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-          0 6px 6px rgba(0, 0, 0, 0.23);
-        margin-left: 8rem;
-      "
-    >
-      <div class="col-md-12">
-        <div style="text-align: center;margin-top: 1rem;">
-            <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 60px;color:rgb(0, 156, 158);"></i>
-            <h4 >Login</h4>
+<nb-layout>
+  <nb-layout-column>
+    <div class="row" style="padding-top: 1.5rem">
+      <div class="col md-12">
+        <div>
+          <h1
+            style="
+              text-align: center;
+              color: rgb(0, 156, 158);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
+            &lt; TDO &gt;
+          </h1>
         </div>
-        <form class="example-form" style="padding-top: 1rem;">
-            <mat-form-field class="example-full-width">
-              <mat-label>Email:</mat-label>
-              <input matInput placeholder="Example@gmail.com" >
-            </mat-form-field>
-            
-          
-            <mat-form-field class="example-full-width" id="z">
-                <mat-label>Password:</mat-label>
-                <input matInput placeholder="Password" type="password" >
+        <div>
+          <h2
+            style="
+              text-align: center;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            "
+          >
+            Maximize Your Potential
+          </h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row" style="padding-top: 2rem;">
+      <div class="col-md-6">
+        <div style="margin-left: 10rem">
+          <img 
+            src="../.././assets/pics/landing page.jpg"
+            width="458"
+            height="432"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row"
+          style="
+            border-radius: 25px;
+            background-color: white;
+            width: 23rem;
+            height: 24.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
+            margin-left: 8rem;
+          "
+        >
+          <div class="col-md-12">
+            <div style="text-align: center;margin-top: 1rem;">
+                <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 60px;color:rgb(0, 156, 158);"></i>
+                <h4 >Login</h4>
+            </div>
+            <form class="example-form" style="padding-top: 1rem;">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Email:</mat-label>
+                  <input matInput placeholder="Example@gmail.com" >
+                </mat-form-field>
                 
-              </mat-form-field>
-             
-          </form>
-
-          <div style="text-align: center;padding-top: 0.5rem;">
-            <span style="padding-right: 1rem;">
-            <button type="button" class="btn btn-outline-secondary" style="border-color:rgb(0, 156, 158);color:rgb(0, 156, 158);width: 6.5rem;">Login</button>
-            </span>
-            <button type="button" class="btn btn-secondary" style="border-color:rgb(0, 156, 158);background-color: rgb(0, 156, 158) ;width: 6.5rem;" >Register</button>
-          </div>
-          <hr>
-          <div style="text-align: center;">
-          <label for="#z" > <a  style="font-size:medium;text-align: center;color: blue;" (click) = "openDialog()">Forgot Password?</a></label>
+              
+                <mat-form-field class="example-full-width" id="z">
+                    <mat-label>Password:</mat-label>
+                    <input matInput placeholder="Password" type="password" >
+                    
+                  </mat-form-field>
+                 
+              </form>
+    
+              <div style="text-align: center;padding-top: 0.5rem;">
+                <span style="padding-right: 1rem;">
+                <button type="button" class="btn btn-outline-secondary" style="border-color:rgb(0, 156, 158);color:rgb(0, 156, 158);width: 6.5rem;">Login</button>
+                </span>
+                <button type="button" class="btn btn-secondary" style="border-color:rgb(0, 156, 158);background-color: rgb(0, 156, 158) ;width: 6.5rem;" >Register</button>
+              </div>
+              <hr>
+              <div style="text-align: center;">
+              <label for="#z" > <a  style="font-size:medium;text-align: center;color: blue;" (click) = "openDialog()">Forgot Password?</a></label>
+            </div>
+            </div>
         </div>
-        </div>
+      </div>
     </div>
-  </div>
-</div>
+    
+    
+  </nb-layout-column>
+</nb-layout>
 
 
          
