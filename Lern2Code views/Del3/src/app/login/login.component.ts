@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import{ForgotpasswordComponent} from './forgotpassword/forgotpassword.component'
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -21,7 +22,15 @@ export class LoginComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      Swal.fire({
+      
+        icon: 'error',
+       title: 'Email does not exist',
+       
+        
+       confirmButtonText: 'Ok',
+        
+      })
       
     });
   }

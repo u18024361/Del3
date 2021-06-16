@@ -32,7 +32,7 @@ export class TutorComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Are you sure you want to delete your profile',
+      title: 'Are you sure you want to change your password',
       
       icon: 'warning',
       showCancelButton: true,
@@ -43,7 +43,7 @@ export class TutorComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           '',
-          'Profile deleted successfully',
+          'Password changed successfully',
           'success'
         )
       }
@@ -52,8 +52,8 @@ export class TutorComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(MaintainComponent, {
-      width: '850px',
-      height:'640px'
+      width: '350px',
+      
      
       
     });
