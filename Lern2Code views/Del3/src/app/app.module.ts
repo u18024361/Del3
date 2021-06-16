@@ -65,6 +65,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CreatesessionComponent } from './tutor/sessions/createsession/createsession.component';
 import { AddattendanceComponent } from './tutor/addattendance/addattendance.component';
+import {MatCardModule} from '@angular/material/card';
+
 
 import { SchedulerModule } from 'angular-calendar-scheduler';
 
@@ -98,6 +100,8 @@ import { PlansComponent } from './student/plans/plans.component';
 import { AboutComponent } from './login/about/about.component';
 import { ContentComponent } from './login/content/content.component';
 import { LoginshopComponent } from './login/loginshop/loginshop.component';
+import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
+import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.component';
 
 
 
@@ -176,6 +180,8 @@ import { LoginshopComponent } from './login/loginshop/loginshop.component';
         AboutComponent,
         ContentComponent,
         LoginshopComponent,
+        CreatetutorComponent,
+        AccepttutComponent,
 
         
         
@@ -206,6 +212,7 @@ import { LoginshopComponent } from './login/loginshop/loginshop.component';
     NbStepperModule,
     MatTabsModule,
     MatDatepickerModule,
+    MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
     CalendarModule.forRoot({
