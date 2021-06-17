@@ -102,6 +102,9 @@ import { ContentComponent } from './login/content/content.component';
 import { LoginshopComponent } from './login/loginshop/loginshop.component';
 import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
 import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.component';
+import { ReoortingComponent } from './reoorting/reoorting.component';
+import { TutordetailsComponent } from './reoorting/tutordetails/tutordetails.component';
+
 
 
 
@@ -182,6 +185,9 @@ import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.c
         LoginshopComponent,
         CreatetutorComponent,
         AccepttutComponent,
+        ReoortingComponent,
+        TutordetailsComponent,
+       
 
         
         

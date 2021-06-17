@@ -26,7 +26,7 @@ export class SessionContentComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Are you sure you want to update the content category',
+      title: 'Are you sure you want to delete the content category',
       
       icon: 'warning',
       showCancelButton: true,
@@ -36,8 +36,8 @@ export class SessionContentComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Success!',
-          'Content category has been added.',
+          '',
+          ' Content category has beed deleted ',
           'success'
         )
       }
@@ -53,8 +53,8 @@ export class SessionContentComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       Swal.fire({
       
-        icon: 'success',
-        title: 'Category has been updated',
+        icon: 'warning',
+        title: 'No matches found',
         confirmButtonText: 'Ok',
         
       })

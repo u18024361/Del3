@@ -28,7 +28,7 @@ export class CourseContentComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           '',
-          'Content Succsefully deleted.',
+          'Content successfully deleted',
           'success'
         )
       }
@@ -44,8 +44,8 @@ export class CourseContentComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       Swal.fire({
       
-        icon: 'warning',
-        title: 'No matches found',
+        icon: 'error',
+        title: 'Course content file already exists. Please try again',
         
         confirmButtonText: 'Ok',
         
