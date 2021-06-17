@@ -1,44 +1,44 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
+
 @Component({
-  selector: 'app-tutors',
-  templateUrl: './tutors.component.html',
-  styleUrls: ['./tutors.component.scss']
+  selector: 'app-accepttut',
+  templateUrl: './accepttut.component.html',
+  styleUrls: ['./accepttut.component.scss']
 })
-export class TutorsComponent implements OnInit {
+export class AccepttutComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  delete(){
+  reject(){
     Swal.fire({
-      title: 'Are you sure you want to delete the tutor?',
-      text: "",
-      icon: 'question',
-      showCancelButton: true,
+      title: 'Are you sure you want to reject the tutor?',
+      text: "This will notify the tutor of your decision",
+      icon: 'warning',
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Yes'
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Deleted!',
-          'Tutor has been deleted.',
+          'Tutor has been Rejected!',
+          '',
           'success'
         )
       }
     })
   }
 
-  edit()
+  accept()
   {
     Swal.fire({
-      title: 'Are you sure you want to delete the Subscription?',
-      
-      icon: 'question',
+      title: 'Are you sure you want to accept the tutor?',
+      text: "The tutor will be added to the system",
+      icon: 'info',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
@@ -46,21 +46,11 @@ export class TutorsComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Saved!',
-          'Subscription has been updated.',
+          'Tutor has been accepted!',
+          '',
           'success'
         )
       }
-    })
-  }
-  
-  search(){
-    Swal.fire({
-      
-      icon: 'warning',
-      title: 'No matches Found',
-      confirmButtonText: 'Ok',
-      
     })
   }
 

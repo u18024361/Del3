@@ -48,6 +48,7 @@ import { PlansComponent } from './student/plans/plans.component';
 import { AboutComponent } from './login/about/about.component';
 import { ContentComponent } from './login/content/content.component';
 import { LoginshopComponent } from './login/loginshop/loginshop.component';
+import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -96,6 +97,7 @@ const routes: Routes = [
   {path:'individualsession',component:IndividualsessionComponent},
   {path:'shop',component:ShopComponent},
   {path:'viewcourse',component:ViewcoursecontentComponent},
+  {path:'createtutor', component:CreatetutorComponent},
   {path:'plans',component:PlansComponent},
   {path:'about',component:AboutComponent},
   {path:'content',component:ContentComponent},
