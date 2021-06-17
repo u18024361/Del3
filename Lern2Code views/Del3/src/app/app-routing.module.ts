@@ -97,7 +97,7 @@ const routes: Routes = [
   {path:'individualsession',component:IndividualsessionComponent},
   {path:'shop',component:ShopComponent},
   {path:'viewcourse',component:ViewcoursecontentComponent},
-  {path:'createtutor', component:CreatetutorComponent}
+  {path:'createtutor', component:CreatetutorComponent},
   {path:'plans',component:PlansComponent},
   {path:'about',component:AboutComponent},
   {path:'content',component:ContentComponent},

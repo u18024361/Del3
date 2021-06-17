@@ -17,12 +17,12 @@ export class UnihomeComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'University Exists',
-      text: "This university already exists please enter another university",
+      title: 'Are you sure you want to delete the university?',
+      text: "",
       icon: 'warning',
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Okay'
+      confirmButtonText: 'Yes'
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
@@ -37,8 +37,8 @@ export class UnihomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to edit the University?',
-      text: "Please ensure the name is correct",
+      title: 'Are you sure you want to delete the University?',
+      text: "",
       icon: 'question',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -47,8 +47,8 @@ export class UnihomeComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Saved!',
-          'University has been created.',
+          'Successful Update',
+          '',
           'success'
         )
       }
