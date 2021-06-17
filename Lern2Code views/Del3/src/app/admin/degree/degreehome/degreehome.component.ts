@@ -37,7 +37,7 @@ export class DegreehomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to delete the Degree?',
+      title: 'Are you sure you want to create the Degree?',
       
       icon: 'question',
       showCancelButton: true,
