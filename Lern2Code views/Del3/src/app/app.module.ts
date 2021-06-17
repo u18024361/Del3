@@ -96,6 +96,10 @@ import { BookComponent } from './student/individualsession/book/book.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ShopComponent } from './student/shop/shop.component';
 import { ViewcoursecontentComponent } from './student/viewcoursecontent/viewcoursecontent.component';
+import { PlansComponent } from './student/plans/plans.component';
+import { AboutComponent } from './login/about/about.component';
+import { ContentComponent } from './login/content/content.component';
+import { LoginshopComponent } from './login/loginshop/loginshop.component';
 import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
 import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.component';
 
@@ -172,6 +176,10 @@ import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.c
         BookComponent,
         ShopComponent,
         ViewcoursecontentComponent,
+        PlansComponent,
+        AboutComponent,
+        ContentComponent,
+        LoginshopComponent,
         CreatetutorComponent,
         AccepttutComponent,
 

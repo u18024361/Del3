@@ -17,8 +17,8 @@ export class UserRoleComponent implements OnInit {
   }
 delete(){
   Swal.fire({
-    title: 'Are you sure you want to update the user role?',
-    text: "You won't be able to revert this!",
+    title: 'Are you sure you want to delete the user role?',
+
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
@@ -27,8 +27,8 @@ delete(){
   }).then((result) => {
     if (result.isConfirmed) {
       Swal.fire(
-        'Deleted!',
-        'User role has been deleted.',
+        '',
+        'successfully created user role ',
         'success'
       )
     }
@@ -43,8 +43,8 @@ openDialog(): void {
   dialogRef.afterClosed().subscribe(result => {
     Swal.fire({
     
-      icon: 'success',
-      title: 'User role has been updated',
+      icon: 'error',
+      title: 'User Role already exists',
       confirmButtonText: 'Ok',
       
     })
