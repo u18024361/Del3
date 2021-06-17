@@ -17,7 +17,7 @@ export class CoursesComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Are you sure you want to delete the category',
+      title: 'Are you sure you want to delete the course content category',
       
       icon: 'warning',
       showCancelButton: true,
@@ -27,8 +27,8 @@ export class CoursesComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Success!',
-          'Content category has been deleted.',
+          '',
+          'Course content category has been deleted.',
           'success'
         )
       }

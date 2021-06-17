@@ -26,7 +26,7 @@ export class SearchStudentComponent implements OnInit {
   delete(){
     Swal.fire({
       title: 'Are you sure you want to delete the student information?',
-      text: "You won't be able to revert this!",
+      
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -35,7 +35,7 @@ export class SearchStudentComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Deleted!',
+          '',
           'Student has been deleted.',
           'success'
         )
