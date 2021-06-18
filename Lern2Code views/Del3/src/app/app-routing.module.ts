@@ -49,6 +49,8 @@ import { AboutComponent } from './login/about/about.component';
 import { ContentComponent } from './login/content/content.component';
 import { LoginshopComponent } from './login/loginshop/loginshop.component';
 import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
+import { ReoortingComponent } from './reoorting/reoorting.component';
+import { TutordetailsComponent } from './reoorting/tutordetails/tutordetails.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -102,6 +104,9 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'content',component:ContentComponent},
   {path:'loginshop',component:LoginshopComponent},
+  {path:'reporting',component:ReoortingComponent},
+  {path:'tutordetails',component:TutordetailsComponent}
+ 
 
 ];
 
