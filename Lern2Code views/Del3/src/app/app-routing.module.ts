@@ -71,7 +71,7 @@ const routes: Routes = [
   {path:'coursecat',component:CoursesComponent},
   {path:'coursecontent', component:CourseContentComponent},
   {path:'degree', component:DegreehomeComponent},
-  {path:'courses', component:CoursehomeComponent},
+  {path:'course', component:CoursehomeComponent},
   {path:'subscription', component:SubhomeComponent},
   {path:'payment',component:PaymentComponent},
   {path:'studentSearchtutor',component:SearchstudnetComponent},

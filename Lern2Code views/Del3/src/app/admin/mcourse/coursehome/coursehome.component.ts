@@ -17,9 +17,9 @@ export class CoursehomeComponent implements OnInit {
 
   delete(){
     Swal.fire({
-      title: 'Delete Course',
-      text: "Are you sure you want to delete this course?",
-      icon: 'question',
+      title: 'Course Already Exists',
+      text: "",
+      icon: 'error',
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Okay'
@@ -37,7 +37,7 @@ export class CoursehomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to update the Course?',
+      title: 'Are you sure you want to create the Course?',
       
       icon: 'question',
       showCancelButton: true,
@@ -48,7 +48,7 @@ export class CoursehomeComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           'Saved!',
-          'Course has been updated.',
+          'Course has been created.',
           'success'
         )
       }
@@ -64,7 +64,7 @@ export class CoursehomeComponent implements OnInit {
       Swal.fire({
       
         icon: 'success',
-        title: 'Course has been updated',
+        title: 'Course has been created',
         confirmButtonText: 'Ok',
         
       })
