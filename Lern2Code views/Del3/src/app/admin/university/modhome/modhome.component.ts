@@ -37,7 +37,7 @@ export class ModhomeComponent implements OnInit {
   edit()
   {
     Swal.fire({
-      title: 'Are you sure you want to delete the Module?',
+      title: 'Are you sure you want to create the Module?',
       
       icon: 'question',
       showCancelButton: true,
