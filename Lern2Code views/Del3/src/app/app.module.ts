@@ -104,6 +104,11 @@ import { CreatetutorComponent } from './admin/tutapplication/createtutor/createt
 import { AccepttutComponent } from './admin/tutapplication/accepttut/accepttut.component';
 import { ReoortingComponent } from './reoorting/reoorting.component';
 import { TutordetailsComponent } from './reoorting/tutordetails/tutordetails.component';
+import { SalesreportComponent } from './reoorting/salesreport/salesreport.component';
+import { AttendancereportComponent } from './reoorting/attendancereport/attendancereport.component';
+import { FeedbackreportComponent } from './reoorting/feedbackreport/feedbackreport.component';
+import { TotalstudentsComponent } from './reoorting/totalstudents/totalstudents.component';
+import { TutorsessionComponent } from './reoorting/tutorsession/tutorsession.component';
 
 
 
@@ -187,6 +192,11 @@ import { TutordetailsComponent } from './reoorting/tutordetails/tutordetails.com
         AccepttutComponent,
         ReoortingComponent,
         TutordetailsComponent,
+        SalesreportComponent,
+        AttendancereportComponent,
+        FeedbackreportComponent,
+        TotalstudentsComponent,
+        TutorsessionComponent,
        
 
         
