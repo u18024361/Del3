@@ -56,7 +56,7 @@ export class IndividualsessionComponent implements OnInit {
     hourSegments: number = 1;
     weekStartsOn: number = 1;
     startsWithToday: boolean = false;
-    activeDayIsOpen: boolean = true;
+    activeDayIsOpen: boolean = false;
     excludeDays: number[] = []; // [0];
     dayStartHour: number = 8;
     dayEndHour: number = 20;
@@ -209,8 +209,13 @@ eventTimesChanged({ event, newStart, newEnd, type }: SchedulerEventTimesChangedE
 
    openDialog(): void {
     const dialogRef = this.dialog.open(BookComponent, {
-      width: '350px',
-      
+      width: '0px',
+      height:'0',
+      position: {
+        bottom: '0px',
+        left: '0px'
+      }
+   
       
      });
   
