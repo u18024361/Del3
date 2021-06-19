@@ -42,8 +42,12 @@ export class MessagingComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(CreatemessageComponent, {
-      width: '350px',
-      
+      width: '0px',
+      height:'0px',
+      position: {
+        bottom: '0px',
+        left: '0px'
+      }
     });
   
     dialogRef.afterClosed().subscribe(result => {
