@@ -25,9 +25,9 @@ export class AddfeedbackComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
+          'Unable to create feedback',
           '',
-          'Successfully Sent',
-          'success'
+          'error'
         )
       }
     })

@@ -27,9 +27,9 @@ export class FeddbackhomeComponent implements OnInit {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire(
-          'Feedback Deleted',
+          'Unable to Delete Feedback',
           '',
-          'success'
+          'error'
         )
       }
     })
