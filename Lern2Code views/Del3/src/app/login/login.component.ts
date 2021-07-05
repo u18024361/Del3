@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       Swal.fire({
       
-        icon: 'error',
-       title: 'Email does not exist',
+        icon: 'success',
+       title: 'You have been logged out',
        
         
        confirmButtonText: 'Ok',

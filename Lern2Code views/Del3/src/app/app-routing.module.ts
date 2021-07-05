@@ -51,6 +51,11 @@ import { LoginshopComponent } from './login/loginshop/loginshop.component';
 import { CreatetutorComponent } from './admin/tutapplication/createtutor/createtutor.component';
 import { ReoortingComponent } from './reoorting/reoorting.component';
 import { TutordetailsComponent } from './reoorting/tutordetails/tutordetails.component';
+import { SalesreportComponent } from './reoorting/salesreport/salesreport.component';
+import { AttendancereportComponent } from './reoorting/attendancereport/attendancereport.component';
+import { FeedbackreportComponent } from './reoorting/feedbackreport/feedbackreport.component';
+import { TotalstudentsComponent } from './reoorting/totalstudents/totalstudents.component';
+import { TutorsessionComponent } from './reoorting/tutorsession/tutorsession.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'Login',pathMatch:'full'},
@@ -105,8 +110,12 @@ const routes: Routes = [
   {path:'content',component:ContentComponent},
   {path:'loginshop',component:LoginshopComponent},
   {path:'reporting',component:ReoortingComponent},
-  {path:'tutordetails',component:TutordetailsComponent}
- 
+  {path:'tutordetails',component:TutordetailsComponent},
+ {path:'sales',component:SalesreportComponent},
+ {path:'attendancereport',component:AttendancereportComponent},
+ {path:'feedbackreport',component:FeedbackreportComponent},
+ {path:'totalstudents',component:TotalstudentsComponent},
+ {path:'tutorsession',component:TutorsessionComponent}
 
 ];
 

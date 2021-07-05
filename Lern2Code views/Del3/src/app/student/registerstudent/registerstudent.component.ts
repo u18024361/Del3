@@ -38,8 +38,9 @@ export class RegisterstudentComponent implements OnInit {
   click(){
     Swal.fire({
       
-      icon: 'error',
-      title: 'This username is already taken',
+      icon: 'success',
+      title: '',
+      text:'Registration successful',
       
       confirmButtonText: 'Ok',
       

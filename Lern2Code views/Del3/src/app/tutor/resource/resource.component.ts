@@ -28,7 +28,7 @@ export class ResourceComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire(
           '',
-          'Successfully deleted the category',
+          'successful creation',
           'success'
         )
       }

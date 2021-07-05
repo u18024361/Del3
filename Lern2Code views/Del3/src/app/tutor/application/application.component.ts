@@ -26,8 +26,8 @@ export class ApplicationComponent implements OnInit {
       if (result.isConfirmed) {
         Swal.fire({
       
-          icon: 'error',
-          title: 'Application already exists. Please try again',
+          icon: 'success',
+          title: 'successfully sent application',
           
           confirmButtonText: 'Ok',
           

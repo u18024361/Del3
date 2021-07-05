@@ -35,8 +35,16 @@ delete(){
   })
 }
 openDialog(): void {
+
   const dialogRef = this.dialog.open(AdduserroleComponent, {
-    width: '350px',
+    width: '0px',
+    height:'0px',
+
+    position: {
+      top: '0px',
+      left: '0px'
+    }
+ 
     
   });
 
@@ -51,6 +59,7 @@ openDialog(): void {
     
   });
 }
+
 
 search(){
   Swal.fire({
